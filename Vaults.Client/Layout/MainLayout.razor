@@ -1,0 +1,53 @@
+﻿@inherits LayoutComponentBase
+
+
+<MudDrawerContainer>
+    <!-- Sidebar -->
+    <MudDrawer Open="true" Width="250px" Elevation="4">
+        <MudNavMenu>
+            <MudNavLink Icon="@Icons.Material.Filled.Assessment" Href="/markets">Markets</MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.TrendingUp" Href="/trading">Trading</MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.AccountBalanceWallet" Href="/wallet">Wallet</MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.CreditCard" Href="/loans">Loans</MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.Security" Href="/vault-page" Match="NavLinkMatch.All">Vaults
+            </MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.PieChart" Href="/portfolio">Portfolio</MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.WaterfallChart" Href="/liquiditypools">Liquidity Pools</MudNavLink>
+            <MudNavLink Icon="@Icons.Material.Filled.SwapHorizontalCircle" Href="/swap">Swap</MudNavLink>
+        </MudNavMenu>
+    </MudDrawer>
+
+    <!-- Main Content -->
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudDrawerContainer>
+
+
+<MudThemeProvider />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+@* <div class="page">
+<p>Welcome to Shopunit @(OperatingSystem.IsBrowser() ? "Wasm" : "Server")!</p>
+<div class="sidebar">
+<NavMenu />
+</div>
+
+<main>
+<div class="top-row px-4">
+<a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+</div>
+
+<article class="content px-4">
+@Body
+</article>
+</main>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+An unhandled error has occurred.
+<a href="." class="reload">Reload</a>
+<span class="dismiss">🗙</span>
+</div> *@

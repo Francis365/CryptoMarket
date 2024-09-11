@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/francis/Development/blazor/Vaults/Vaults.Client/bin/Debug/net9.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/Users/francis/Development/blazor/Vaults/Vaults.Client/obj/Debug/net9.0/scopedcss/projectbundle/Vaults.Client.bundle.scp.css",
+      "PackagePath": "staticwebassets/Vaults.Client.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/francis/Development/blazor/Vaults/Vaults.Client/wwwroot/appsettings.Development.json",
+      "PackagePath": "staticwebassets/appsettings.Development.json"
+    },
+    {
+      "Id": "/Users/francis/Development/blazor/Vaults/Vaults.Client/wwwroot/appsettings.json",
+      "PackagePath": "staticwebassets/appsettings.json"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Vaults.Client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Vaults.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.Vaults.Client.props",
+      "PackagePath": "build\\Vaults.Client.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Vaults.Client.props",
+      "PackagePath": "buildMultiTargeting\\Vaults.Client.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Vaults.Client.props",
+      "PackagePath": "buildTransitive\\Vaults.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

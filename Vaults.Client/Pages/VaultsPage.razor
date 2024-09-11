@@ -1,0 +1,88 @@
+@page "/vault-page"
+
+<MudGrid>
+    <MudItem xs="12" sm="12">
+        <MudText Typo="Typo.h4" Class="mb-3">Vaults</MudText>
+    </MudItem>
+
+    <!-- Performance Metrics -->
+    <MudItem xs="12" sm="12">
+        <MudGrid>
+            <MudItem xs="4">
+                <MudPaper Class="pa-3" Elevation="2" Rounded="true">
+                    <MudText Typo="Typo.subtitle1">Performance</MudText>
+                    <MudText Typo="Typo.body2">Chains:</MudText>
+                    <MudAvatarGroup Max="5">
+                        <MudAvatar Icon="@Icons.Material.Filled.TrendingUp" />
+                        <MudAvatar Icon="@Icons.Material.Filled.Security" />
+                        <MudAvatar Icon="@Icons.Material.Filled.PieChart" />
+                        <MudAvatar Icon="@Icons.Material.Filled.CreditCard" />
+                    </MudAvatarGroup>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="4">
+                <MudPaper Class="pa-3" Elevation="2" Rounded="true">
+                    <MudText Typo="Typo.subtitle1">Vaults</MudText>
+                    <MudText Typo="Typo.h4">1,308</MudText>
+                </MudPaper>
+            </MudItem>
+            <MudItem xs="4">
+                <MudPaper Class="pa-3" Elevation="2" Rounded="true">
+                    <MudText Typo="Typo.subtitle1">Assets under Management</MudText>
+                    <MudText Typo="Typo.h4">$82,413,926,740</MudText>
+                </MudPaper>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+
+    <!-- Popular Vaults Carousel -->
+    <MudItem xs="12" sm="12" Class="mt-4">
+        <MudText Typo="Typo.h5">Popular Vaults</MudText>
+        <MudCarousel TData="object">
+            <MudCarouselItem>
+                <MudCard Class="pa-3">
+                    <MudText Typo="Typo.h6">Civa</MudText>
+                    <MudText Typo="Typo.caption">AUM</MudText>
+                    <MudText Typo="Typo.caption">Depositors</MudText>
+                    <MudText Color="Color.Error">$0.39 / share -0.09% 24h</MudText>
+                </MudCard>
+            </MudCarouselItem>
+            <MudCarouselItem>
+                <MudCard Class="pa-3">
+                    <MudText Typo="Typo.h6">ARCrypto MV</MudText>
+                    <MudText Typo="Typo.caption">AUM</MudText>
+                    <MudText Typo="Typo.caption">Depositors</MudText>
+                    <MudText Color="Color.Success">$0.94 / share +0.53% 24h</MudText>
+                </MudCard>
+            </MudCarouselItem>
+            <MudCarouselItem>
+                <MudCard Class="pa-3">
+                    <MudText Typo="Typo.h6">Definable Mid/Small Cap</MudText>
+                    <MudText Typo="Typo.caption">AUM</MudText>
+                    <MudText Typo="Typo.caption">Depositors</MudText>
+                    <MudText Color="Color.Success">$0.25 / share +1.93% 24h</MudText>
+                </MudCard>
+            </MudCarouselItem>
+        </MudCarousel>
+    </MudItem>
+
+    <!-- Vaults List -->
+    <MudItem xs="12" sm="12" Class="mt-4">
+        <MudTabs>
+            <MudTabPanel Text="All Vaults">
+                <!-- Vaults Table Here -->
+            </MudTabPanel>
+            <MudTabPanel Text="Eligible Vaults">
+                <!-- Eligible Vaults Table Here -->
+            </MudTabPanel>
+            <MudTabPanel Text="My Vaults">
+                <!-- My Vaults Table Here -->
+            </MudTabPanel>
+        </MudTabs>
+    </MudItem>
+</MudGrid>
+
+
+@code {
+    private bool _drawerOpen = true;
+}
